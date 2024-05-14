@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./swiggy.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css -->
+</head>
+<body>
+    <div class="swiggy">
+        
+        <div class="header">
+            <div class="logo">
+                <img src="./assets/swiggylogo.png" alt="">
+                <!-- <a href="">Other</a> -->
+                <button id="btn"  onclick="showbtn()">Other</button>
+                <select name="" id=""></select>
+                <!-- <select><option value="">Other</option></select> -->
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><i class="fa-solid fa-bag-shopping"></i><span>Swiggy Corparation</span></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></li>
+                    <li><i class="fa-solid fa-circle-exclamation"></i><span>Offers <sup id="new">New</sup></span></li>
+                    <li><i class="fa-solid fa-burger"></i><span>Help</span></li>
+                    <li><i class="fa-regular fa-user"></i><span>Sign in</span></li>
+                    <li><i class="fa-solid fa-bag-shopping"></i><span>Cart</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainhead">
+                <h1>What's on your mind?</h1>
+                <div class="slidebtn">
+                    <button id="sldbtn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="sldbtn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="small-img">
+                <div><img src="./assets/foodsmall1.jpeg" alt=""><p>Salad</p></div>
+                <div><img src="./assets/foodsmall2.jpeg" alt=""><p>Cheesy Omblet</p></div>
+                <div><img src="./assets/foodsmall3.jpeg" alt=""><p>Manchoorian</p></div>
+                <div><img src="./assets/foodsmall4.jpeg" alt=""><p>Desserts</p></div>
+                <div><img src="./assets/foodsmall2.jpeg" alt=""><p>Bread Omblet</p></div>
+                <div><img src="./assets/foodsmall1.jpeg" alt=""><p>Biryani</p></div>
+            </div>
+            <div class="secondflex">
+                <div class="mainhead mainhead2">
+                    <h1>Top restaurent chains in Chennai</h1>
+                    <div class="slidebtn">
+                        <button id="sldbtn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button id="sldbtn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>  
+                </div>
+                <div class="larg-image">
+                    <div><img src="./assets/foodlarg1.jpeg" alt=""><p class="line">Big Bowl</p>
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.4.30-45 mins</span>
+                    <p class="line3">South Indian </p>
+                    <p>OMR Perungudi</p></div>
+
+                    <div><img src="./assets/foodlarg2.jpeg" alt=""><p class="line"><p class="line">Andhra Special</p>
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.7.25-30 mins</span>
+                     <p class="line3">Andhra,Biryani,SouthIndian </p>
+                    <p>OMR Perungudi</p> </div>
+
+
+                    <div><img src="./assets/foodlarg3.jpeg" alt=""><p class="line">Big Bowl</p>
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.8.20-35 mins</span>
+                    <p class="line3">Kerala,Mutton Biryani,South Indian</p>
+                    <p>Kanchipuram</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="thirdflex">
+                <h1>Restaurants with online food delivery in Chennai</h1>
+                <div class="btncombo">
+                    <button>Filter<i class="fa-solid fa-filter"></i></button>
+                    <button>Sort By<i class="fa-solid fa-angle-down"></i></button>
+                    <button>Fast Delivery</button>
+                    <button>New On Swiggy</button>
+                    <button>Rating 4.0+</button>
+                    <button>Pure Veg</button>
+                    <button>Offers</button>
+                    <button>Rs.300-Rs.600</button>
+                    <button>Less than Rs.300</button>
+                </div>
+                <div class="medium-img larg-image">
+                        <div><img src="./assets/foodmedium3.jpeg" alt=""><p class="line">Big Bowl</p>
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.4.30-45 mins</span>
+                        <p class="line3">South Indian </p>
+                        <p>OMR Perungudi</p></div>
+    
+                        <div><img src="./assets/foodmedium4.jpeg" alt=""><p class="line"><p class="line">Andhra Special</p>
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.7.25-30 mins</span>
+                         <p class="line3">Andhra,Biryani,SouthIndian </p>
+                        <p>OMR Perungudi</p> </div>
+    
+    
+                        <div><img src="./assets/foodmedium5.jpeg" alt=""><p class="line">Big Bowl</p>
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.8.20-35 mins</span>
+                        <p class="line3">Kerala,Mutton Biryani,South Indian</p>
+                        <p>Kanchipuram</p> 
+                        </div>
+
+                        <div><img src="./assets/foodsmall1.jpeg" alt=""><p class="line">Big Bowl</p>
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8.20-35 mins</span>
+                            <p class="line3">Kerala,Mutton Biryani,South Indian</p>
+                            <p>Kanchipuram</p> 
+                            </div>
+
+                            <div><img src="./assets/foodsmall2.jpeg" alt=""><p class="line">Big Bowl</p>
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8.20-35 mins</span>
+                                <p class="line3">Kerala,Mutton Biryani,South Indian</p>
+                                <p>Kanchipuram</p> 
+                                </div>
+
+                                <div><img src="./assets/foodsmall3.jpeg" alt=""><p class="line">Big Bowl</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.8.20-35 mins</span>
+                                    <p class="line3">Kerala,Mutton Biryani,South Indian</p>
+                                    <p>Kanchipuram</p> 
+                                    </div>
+
+                                    <div><img src="./assets/foodsmall4.jpeg" alt=""><p class="line">Big Bowl</p>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>4.8.20-35 mins</span>
+                                        <p class="line3">Kerala,Mutton Biryani,South Indian</p>
+                                        <p>Kanchipuram</p> 
+                                        </div>
+                                     
+                                        <div><img src="./assets/foodmedium3.jpeg" alt=""><p class="line">Big Bowl</p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>4.4.30-45 mins</span>
+                                            <p class="line3">South Indian </p>
+                                            <p>OMR Perungudi</p></div>
+                        
+                                            <div><img src="./assets/foodmedium4.jpeg" alt=""><p class="line"><p class="line">Andhra Special</p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>4.7.25-30 mins</span>
+                                             <p class="line3">Andhra,Biryani,SouthIndian </p>
+                                            <p>OMR Perungudi</p> </div>      
+                                 
+                                            <div><img src="./assets/foodmedium3.jpeg" alt=""><p class="line">Big Bowl</p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>4.4.30-45 mins</span>
+                                                <p class="line3">South Indian </p>
+                                                <p>OMR Perungudi</p></div>
+                            
+                                                <div><img src="./assets/foodlarg2.jpeg" alt=""><p class="line"><p class="line">Andhra Special</p>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>4.7.25-30 mins</span>
+                                                 <p class="line3">Andhra,Biryani,SouthIndian </p>
+                                                <p>OMR Perungudi</p> </div> 
+                                                
+                                                <div><img src="./assets/foodsmall3.jpeg" alt=""><p class="line">Big Bowl</p>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <span>4.4.30-45 mins</span>
+                                                    <p class="line3">South Indian </p>
+                                                    <p>OMR Perungudi</p></div>
+                                
+                                                    <div><img src="./assets/foodlarg2.jpeg" alt=""><p class="line"><p class="line">Andhra Special</p>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <span>4.7.25-30 mins</span>
+                                                     <p class="line3">Andhra,Biryani,SouthIndian </p>
+                                                    <p>OMR Perungudi</p> </div> 
+                             
+                                                    <div><img src="./assets/foodmedium3.jpeg" alt=""><p class="line">Big Bowl</p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>4.4.30-45 mins</span>
+                                                        <p class="line3">South Indian </p>
+                                                        <p>OMR Perungudi</p></div>
+                                    
+                                                        <div><img src="./assets/foodmedium5.jpeg" alt=""><p class="line"><p class="line">Andhra Special</p>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>4.7.25-30 mins</span>
+                                                         <p class="line3">Andhra,Biryani,SouthIndian </p>
+                                                        <p>OMR Perungudi</p> </div> 
+                                                        
+                                                        <div><img src="./assets/foodmedium3.jpeg" alt=""><p class="line">Big Bowl</p>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>4.4.30-45 mins</span>
+                                                            <p class="line3">South Indian </p>
+                                                            <p>OMR Perungudi</p></div>
+                                        
+                                                            <div><img src="./assets/foodsmall1.jpeg" alt=""><p class="line"><p class="line">Andhra Special</p>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>4.7.25-30 mins</span>
+                                                             <p class="line3">Andhra,Biryani,SouthIndian </p>
+                                                            <p>OMR Perungudi</p> </div>                          
+                    
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="footerbtn">
+                <h1>Best Places to Eat Accros Cities</h1>
+                <div class="btncollection">
+                    <button>Best Restaurants in India</button>
+                    <button>Best Restaurants in Kolkata</button>
+                    <button>Best Restaurants in Assam</button>
+                    <button>Best Restaurants in Chennai</button>
+                    <button>Best Restaurants in Kanchipuram</button>
+                    <button>Best Restaurants in Arakonam</button>
+                    <button>Best Restaurants in Velachery</button>
+                    <button>Best Restaurants in Sevilimedu</button>
+                    <button>Best Restaurants in Kerala</button>
+                    <button>Best Restaurants in Kozhikodu</button>
+                    <button>Best Restaurants in Andhra</button>
+                    <button id="show-more">Show More<i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="footerbtn btn2">
+                <h1>Best Cuisines Near Me</h1>
+                <div class="btncollection second-collection">
+                    <button>Chinese Restaurants Near Me</button>
+                    <button>Kerala Restaurants Near Me</button>
+                    <button>Karnataka Restaurants Near Me</button>
+                    <button>Kochi Restaurants Near Me</button>
+                    <button>Goa Restaurants Near Me</button>
+                    <button>TamilNadu Restaurants Near Me</button>
+                    <button>Chinese Restaurants Near Me</button>
+                    <button>South Indian Restaurants Near Me</button>
+                    <button> North Indian Near Me</button>
+                    <button> Home Made Near Me</button>
+                    <button> Local Near Me</button>
+                    <button id="show-more">Show More<i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="btn3">
+                <h1>Explore Every Restaurants Near Me</h1>
+                <div class=" third-collection">
+                    <button>Explore Restaurants Near Me</button>
+                    <button>Explore Top Rated Restaurants Near Me</button>
+                </div>
+            </div>
+        </div>
+        <div class="googlebuttons">
+            <div>
+                <h1>For better experience,download</h1>
+                <h1>the Swiggy app now</h1>
+            </div>
+            <div id="download-btn">
+                <div id="playstore"><i class="fa-brands fa-google-play"></i><button><p>GET IT ON</p>Google Play</button></div>
+                <div id="apple"><i class="fa-brands fa-apple"></i><button><p>Download on the</p>App Store</button></div>
+            </div>
+        </div>
+        <div class="contact">
+            <div id="final-flex">
+                <div id="year-part">
+                    <h2>Swiggy</h2>
+                     <p class="year">&#169 2024 Bundl </p>
+                     <p class="year">Technologies Pvt. Ltd</p>
+                </div>
+                <div>
+                    <h3>Compony</h3>
+                    <p>About</p> 
+                    <p>Careers</p>
+                    <p>Team</p>
+                    <p>Swiggy One</p>
+                    <p>Swiggy Instamart</p>
+                    <p>Swiggy Genie</p>
+                </div>
+                <div>
+                    <h3>Contact Us</h3> 
+                   <p>Help & Support</p>
+                   <p>Partner with us</p>
+                   <p>Ride with us</p>
+                   <h3 id="legal">Legal</h3>
+                   <p>Terms & Conditions</p> 
+                   <p>Cookie Policy</p> 
+                   <p> Privacy Policy</p>
+                   <p>Investor Relation</p> 
+                </div>
+                <div>
+                    <h3>We deliver to:</h3>
+                     <p>Bangalore</p>
+                     <p>Gurgaon</p>
+                     <p>Hyderabad</p>
+                     <p>Delhi</p>
+                     <p>Mumbai</p>
+                     <p>Pune</p>
+                     <button>598 Cities<i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchbtn " id="hidebtn" hidden>
+            <button id="cross"><i class="fa-solid fa-xmark"></i></button>
+            <input type="text" placeholder="Search for area,street name...">
+           <button id="location">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            Get current location 
+            <p>Using GPS</p>
+           </button>
+        </div>
+    </div>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    .header{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.4);
+    color:rgb(100, 91, 91);
+    font-weight: bold;
+    .nav li:hover{
+        color:orange
+    }
+
+}
+.logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.logo img{
+    width:40px;
+    height: 50px;
+    margin-right: 15px;
+    transition: 0.2s;
+    
+}
+.logo img:hover{
+    transform: scale(1.1);
+}
+#btn:hover{
+    color:orange;
+
+}
+.logo select{
+    margin-left: 10px;
+    border: none;
+    color:orangered;
+    font-size:20px;
+    /* border-bottom: 2px solid; */
+}
+#btn{
+    margin-left: 30px;
+    /* letter-spacing: 2px; */
+    color:rgb(67, 63, 63);
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid;
+    /* font-size: 15px; */
+}
+.nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li{
+    list-style-type: none;
+    /* border: 1px solid; */
+    margin-left: 50px;
+}
+
+span{
+    margin-left: 10px;
+}
+#new{
+    color:orange;
+}
+.searchbtn{
+    width:400px;
+    /* border: 1px solid; */
+    height: 100vh;
+    background-color: white;
+    padding: 30px;
+}
+.searchbtn button,input{
+    display: block;
+    margin-top: 20px;
+    /* width: 100%; */
+    padding: 15px;
+    width: 100%;
+    margin-left: 30px;
+}
+#cross{
+    width:50px;
+    border: none;
+    background-color: white;
+    /* padding: 0; */
+    padding: 15px;
+    cursor: pointer;
+}
+#cross i{
+    font-size: 25px;
+    color:gray;   
+}
+.searchbtn input{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    border: 1px solid gainsboro;
+    font-size: 18px;
+}
+#location{
+    padding: 30px 20px;
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid gray;
+}
+#location:hover{
+    color:orange;
+}
+#location p{
+    margin-left: 25px;
+    font-size: 13px;
+    color:gray
+}
+#location i{
+    margin-right: 3px;
+    color:rgb(96, 85, 85);
+}
+.main{
+    padding: 10px 200px;
+}
+.mainhead{
+    display: flex;
+    justify-content: space-between;
+}
+#sldbtn{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+}
+.small-img{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(222, 218, 218);
+}
+.small-img img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 40px;
+    box-shadow: 4px 4px 5px;
+}
+.small-img p{
+    text-align: center;
+    color:gray;
+    font-size: 17px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+.mainhead2{
+    margin-top: 40px;
+}
+.larg-image{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    color:rgb(100, 96, 96);
+    border-bottom: 2px solid rgb(168, 159, 159);
+}
+.larg-image img{
+    width:250px;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.larg-image .line{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 4px 0;
+}
+.larg-image p{
+    margin:4px 0 ;
+}
+.larg-image i{
+    color:rgb(12, 107, 12);
+    font-size: 20px;
+    margin: 4px 0;
+}
+.larg-image span{
+margin-left: 1px;
+margin: 4px 0;
+}
+.larg-image div{
+    margin-bottom: 40px;
+}
+h1{
+    font-weight: lighter;
+}
+.thirdflex h1{
+    margin-top: 30px;
+}
+.btncombo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom:30px;
+    width: 100%;
+}
+.btncombo button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 4px;
+}
+.btncombo i{
+    margin-left: 5px;
+}
+.medium-img{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.medium-img img{
+    width: 180px;
+    height: 150px;
+}
+.about{
+    padding: 10px 70px;
+}
+.btncollection{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.btncollection button,.third-collection button{
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgb(190, 184, 184);
+    background-color: white;
+    font-size: 18px;
+    color:rgb(89, 84, 84);
+    cursor: pointer;
+}
+.about h1{
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.btn2{
+    margin-top: 80px;
+}
+#show-more{
+    font-weight: bold;
+}
+.third-collection{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.third-collection button{
+    width: 500px;
+    cursor: pointer;
+}
+.btn3 h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.googlebuttons{
+    height: 100px;
+    background-color: rgb(225, 218, 218);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    /* text-align: center; */
+}
+#download-btn{
+    display: flex;
+    justify-content: space-between;
+}
+#download-btn div{
+   width:250px;
+   /* border: 1px solid; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 0px;
+   margin-right: 20px;
+   font-size: 40px;
+   color:white;
+   background-color: black;
+   border-radius: 10px;
+   /* font-size: 15px; */
+}
+#download-btn button{
+    font-size: 25px;
+    background-color: black;
+    color:white;
+    border: none;
+}
+#download-btn p{
+    font-size: 10px;
+}
+#download-btn i{
+    margin-right: 10px;
+}
+#final-flex{
+    background-color: black;
+    color:white;
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+}
+#final-flex p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color:gray;
+    cursor: pointer;
+}
+#legal{
+    margin-top: 50px;
+}
+#final-flex button{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color:gray;
+    cursor: pointer;
+}
+#final-flex i{
+    margin-left: 4px;
+}
+#year-part{
+    font-size: 18px;
+}
+
+    </style>
+    <script src="./script.js"></script>
+</body>
+</html>
